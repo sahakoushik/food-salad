@@ -5,8 +5,8 @@ import {AppRegistry,View,Text,Image,ScrollView} from 'react-native';
 const Header = ()=>{
     return (
         <View style={{height:60,elevation:3,backgroundColor:"white"}}>
-            <View>
-                <Text style={{color:"#2bbc11",fontSize:20,justifyContent:"center",alignItems:"center"}}>Food Salad</Text>
+            <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+                <Text style={{color:"#364951",fontSize:26,}}>Food Salad</Text>
             </View>
         </View>
     )

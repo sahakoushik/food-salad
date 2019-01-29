@@ -5,43 +5,47 @@ import {AppRegistry,View,Text,Image,ScrollView} from 'react-native';
 const ItemCategory = ()=>{
     return (
         <View>
-            <ScrollView horizontal={true} style={{marginHorizontal: 20}}>
+            <ScrollView horizontal={true} style={{margin: 20}}>
                 <View style={{flexDirection: "row"}}>
                     <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
+                        <Image source={require('../../assets/burger.png')} style={{width:48,height:48,elevation:2}}/>
                         <Text>Burger</Text>
                     </View>
                     <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
+                        <Image source={require('../../assets/pizza-slice.png')} style={{width:48,height:48,elevation:2}}/>
+                        <Text>Pizza</Text>
+                    </View>
+                    <View style={styles.restStat}>
+                        <Image source={require('../../assets/cheese.png')} style={{width:48,height:48,elevation:2}}/>
+                        <Text>Cake</Text>
+                    </View>
+                    <View style={styles.restStat}>
+                        <Image source={require('../../assets/french-fries.png')} style={{width:48,height:48,elevation:2}}/>
+                        <Text>Fries</Text>
+                    </View>
+                    <View style={styles.restStat}>
+                        <Image source={require('../../assets/fried-chicken.png')} style={{width:48,height:48,elevation:2}}/>
+                        <Text>Chicken</Text>
+                    </View>
+                    <View style={styles.restStat}>
+                        <Image source={require('../../assets/noodles.png')} style={{width:48,height:48,elevation:2}}/>
+                        <Text>Noodles</Text>
+                    </View>
+                    <View style={styles.restStat}>
+                        <Image source={require('../../assets/burger.png')} style={{width:48,height:48,elevation:10,backgroundColor:"white"}}/>
                         <Text>Burger</Text>
                     </View>
                     <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
-                        <Text>Burger</Text>
+                        <Image source={require('../../assets/pizza-slice.png')} style={{width:48,height:48}}/>
+                        <Text>Pizza</Text>
                     </View>
                     <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
-                        <Text>Burger</Text>
+                        <Image source={require('../../assets/cheese.png')} style={{width:48,height:48,elevation:2}}/>
+                        <Text>Cake</Text>
                     </View>
                     <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
-                        <Text>Burger</Text>
-                    </View>
-                    <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
-                        <Text>Burger</Text>
-                    </View>
-                    <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
-                        <Text>Burger</Text>
-                    </View>
-                    <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
-                        <Text>Burger</Text>
-                    </View>
-                    <View style={styles.restStat}>
-                        <Image source={require('../../assets/fast-food.png')}/>
-                        <Text>Burger</Text>
+                        <Image source={require('../../assets/french-fries.png')} style={{width:48,height:48,elevation:2}}/>
+                        <Text>Fries</Text>
                     </View>
                 </View>
             </ScrollView>
@@ -70,10 +74,16 @@ const styles={
         fontSize:14
     },
     restStat:{
-        width:60,
-        marginRight:10,
+        width:80,
+        marginRight:20,
         justifyContent:"center",
-        alignItems:"center"
+        alignItems:"center",
+        backgroundColor:"white",
+        marginBottom:5,
+        marginTop:5,
+        paddingVertical:5,
+        elevation:2,
+        borderRadius:5,
     },
 
 }
