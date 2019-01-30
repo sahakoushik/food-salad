@@ -5,7 +5,7 @@ import {AppRegistry,View,Text,Image,ScrollView} from 'react-native';
 const ItemCategory = ()=>{
     return (
         <View>
-            <ScrollView horizontal={true} style={{margin: 20}}>
+            <ScrollView horizontal={true} style={{marginVertical: 20}}>
                 <View style={{flexDirection: "row"}}>
                     <View style={styles.restStat}>
                         <Image source={require('../../assets/burger.png')} style={{width:48,height:48,elevation:2}}/>
